@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<root>
+  <appdef>
+    <appname>ECLIPSE_MARS</appname>
+    <equal>org.eclipse.platform.ide</equal>
+  </appdef>
+  <item>
+    <name>Eclipse LineUp and LineDown n, p</name>
+    <identifier>private.vim_contents_next_and_prev</identifier>
+    <only>ECLIPSE_MARS</only>
+    <autogen>
+      __KeyToKey__
+      KeyCode::N, ModifierFlag::CONTROL_L, | ModifierFlag::NONE,
+      KeyCode::CURSOR_DOWN
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::P, ModifierFlag::CONTROL_L, | ModifierFlag::NONE,
+      KeyCode::CURSOR_UP
+    </autogen>
+  </item>
+</root>
