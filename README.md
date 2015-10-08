@@ -1,1 +1,1 @@
-# Karabiner
+# Karabiner -Config file-
