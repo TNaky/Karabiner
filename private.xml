@@ -1,22 +1,38 @@
 <?xml version="1.0"?>
 <root>
-  <appdef>
-    <appname>ECLIPSE_MARS</appname>
-    <equal>org.eclipse.platform.ide</equal>
-  </appdef>
   <item>
-    <name>Eclipse LineUp and LineDown n, p</name>
-    <identifier>private.vim_contents_next_and_prev</identifier>
-    <only>ECLIPSE_MARS</only>
-    <autogen>
-      __KeyToKey__
-      KeyCode::N, ModifierFlag::CONTROL_L, | ModifierFlag::NONE,
-      KeyCode::CURSOR_DOWN
-    </autogen>
-    <autogen>
-      __KeyToKey__
-      KeyCode::P, ModifierFlag::CONTROL_L, | ModifierFlag::NONE,
-      KeyCode::CURSOR_UP
-    </autogen>
+    <name>Majestouch MINILA key map</name>
+    <list>
+      <item>
+        <name>Swap COMMAND to OPTION_L</name>
+        <appendix>
+          Change key :
+          &#x9;Replace OPTION_L to COMMAND_L
+          &#x9;Replace COMMAND_L to OPTION_L
+        </appendix>
+        <identifier>private.majestouch.minila.swap.opt_to_cmd</identifier>
+        <autogen>
+          __KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L
+        </autogen>
+        <autogen>
+          __KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L
+        </autogen>
+      </item>
+      <item>
+        <name>Swap Pipe to Childa</name>
+        <appendix>
+          Change key :
+          &#x9;Replace BACKSLASH to BACKQUOTE
+          &#x9;Replace BACKQUOTE to BACKSLASH
+        </appendix>
+        <identifier>private.majestouch.minila.swap.pipe_to_childa</identifier>
+        <autogen>
+          __KeyToKey__ KeyCode::BACKSLASH, KeyCode::BACKQUOTE
+        </autogen>
+        <autogen>
+          __KeyToKey__ KeyCode::BACKQUOTE, KeyCode::BACKSLASH
+        </autogen>
+      </item>
+    </list>
   </item>
 </root>
