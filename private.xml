@@ -1,5 +1,35 @@
 <?xml version="1.0"?>
 <root>
+  <!-- devices -->
+  <!-- vendors -->
+  <!-- FILCO -->
+  <devicevendordef>
+    <!-- Setting an arbitrary name -->
+    <vendorname>FILCO</vendorname>
+    <!-- Setting a fixed value(Check : EventViewer -> Devices) -->
+    <vendorid>0x04b4</vendorid>
+  </devicevendordef>
+
+  <!-- products -->
+  <!-- Majestouch MINILA -->
+  <deviceproductdef>
+    <!-- Setting an arbitrary name -->
+    <productname>MAJESTOUCH_MINILA</productname>
+    <!-- Setting a fixed value(Check : EventViewer -> Devices) -->
+    <productid>0x0101</productid>
+  </deviceproductdef>
+
+  <!-- Applications -->
+  <!-- Eclipse -->
+  <appdef>
+    <!-- Setting an arbitrary name -->
+    <appname>ECLIPSE</appname>
+    <!-- Setting a fixed value(Check : EventViewer -> App) -->
+    <equal>org.eclipse.platform.ide</equal>
+  </appdef>
+
+  <!-- key maps -->
+  <!-- Setting when Majestouch MINILA is connected -->
   <item>
     <name>Majestouch MINILA key map</name>
     <list>
@@ -11,6 +41,7 @@
           &#x9;Replace COMMAND_L to OPTION_L
         </appendix>
         <identifier>private.majestouch.minila.swap.opt_to_cmd</identifier>
+        <device_only>DeviceVendor::FILCO, DeviceProduct::MAJESTOUCH_MINILA</device_only>
         <autogen>
           __KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L
         </autogen>
@@ -26,6 +57,7 @@
           &#x9;Replace BACKQUOTE to BACKSLASH
         </appendix>
         <identifier>private.majestouch.minila.swap.pipe_to_childa</identifier>
+        <device_only>DeviceVendor::FILCO, DeviceProduct::MAJESTOUCH_MINILA</device_only>
         <autogen>
           __KeyToKey__ KeyCode::BACKSLASH, KeyCode::BACKQUOTE
         </autogen>
@@ -40,8 +72,38 @@
           &#x9;Replace FORWARD_DELETE to CONTROL_R
         </appendix>
         <identifier>private.majestouch.minila.swap.del_to_ctrl</identifier>
+        <device_only>DeviceVendor::FILCO, DeviceProduct::MAJESTOUCH_MINILA</device_only>
         <autogen>
           __KeyToKey__ KeyCode::FORWARD_DELETE, KeyCode::CONTROL_R
+        </autogen>
+      </item>
+    </list>
+  </item>
+
+  <!-- Setting when using the Eclipse -->
+  <item>
+    <name>Eclipse key map</name>
+    <list>
+      <item>
+        <name>Set Ctrl-N to Down</name>
+        <appendix>
+          Eclipse only set the Ctrl-N to Down key
+        </appendix>
+        <identifier>private.eclipse.ctrln_to_down</identifier>
+        <only>ECLIPSE</only>
+        <autogen>
+          __KeyToKey__ KeyCode::N, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN
+        </autogen>
+      </item>
+      <item>
+        <name>Set Ctrl-P to Up</name>
+        <appendix>
+          Eclipse only set the Ctrl-P to Up key
+        </appendix>
+        <identifier>private.eclipse.ctrlp_to_up</identifier>
+        <only>ECLIPSE</only>
+        <autogen>
+          __KeyToKey__ KeyCode::P, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP
         </autogen>
       </item>
     </list>
