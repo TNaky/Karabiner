@@ -77,6 +77,18 @@
           __KeyToKey__ KeyCode::FORWARD_DELETE, KeyCode::CONTROL_R
         </autogen>
       </item>
+      <item>
+        <name>Swap PC_APPLICETON to COMMAND_R</name>
+        <appendix>
+          Change key :
+          &#x9;Replace PC_APPLICETON to CONTROL_R
+        </appendix>
+        <identifier>private.majestouch.minila.swap.app_to_cmd</identifier>
+        <device_only>DeviceVendor::FILCO, DeviceProduct::MAJESTOUCH_MINILA</device_only>
+        <autogen>
+          __KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::COMMAND_R
+        </autogen>
+      </item>
     </list>
   </item>
 
