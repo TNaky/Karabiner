@@ -5,5 +5,6 @@
 ![Karabiner](img/1.png)
 ![Karabiner](img/2.png)
 ![Karabiner](img/3.png)
+![Karabiner](img/4.png)
 
 あとはほかのサイトとかを参考にしながら設定

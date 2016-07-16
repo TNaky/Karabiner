@@ -92,14 +92,14 @@
     </list>
   </item>
 
-  <!-- Setting when using the Eclipse -->
+  <!-- Setting when the Eclipse is used -->
   <item>
     <name>Eclipse key map</name>
     <list>
       <item>
         <name>Set Ctrl-N to Down</name>
         <appendix>
-          Eclipse only set the Ctrl-N to Down key
+          When Eclipse is used; Set the Ctrl-N to Down key
         </appendix>
         <identifier>private.eclipse.ctrln_to_down</identifier>
         <only>ECLIPSE</only>
@@ -110,7 +110,7 @@
       <item>
         <name>Set Ctrl-P to Up</name>
         <appendix>
-          Eclipse only set the Ctrl-P to Up key
+          When Eclipse is used; Set the Ctrl-P to Up key
         </appendix>
         <identifier>private.eclipse.ctrlp_to_up</identifier>
         <only>ECLIPSE</only>
